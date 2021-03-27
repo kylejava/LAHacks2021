@@ -1,0 +1,11 @@
+.topright{
+  background-color: #FFFFFF;
+  float: right;
+  font-size: 25px;
+  font-family: 'Sarabun', sans-serif;
+  margin-bottom: 25px;
+}
+
+.topleft{
+    background-color: #FFFFFF;
+}
