@@ -10,14 +10,14 @@
 
     <div class="container">
       <h5 class="text-center">Results</h5>
-      {% for biz in places %}
+      {% for biz in businesses %}
         <div class="business">
           <div class="row">
             <div class="col-sm-4">
-
+              <img src="{{biz.image}}" alt="image">
             </div>
             <div class="col-sm-8">
-
+              <h1>{{biz.name}}</h1>
             </div>
           </div>
         </div>

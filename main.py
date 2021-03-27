@@ -1,8 +1,8 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import requests
 import json
 from pprint import pprint
-
+from models import *
 
 app = Flask(__name__)
 
@@ -12,7 +12,13 @@ def index():
 
 @app.route('/result', methods = ['GET', 'POST'])
 def results():
-    return render_template('results.html')
+    businesses = []
+    if(request.method == 'POST'):
+        choice = request.form['choice']
+        location = request.form['location']
+        businesses = findBusiness(choice , location)
+
+    return render_template('results.html' , businesses = businesses)
 
 if __name__ == "__main__":
     app.run(debug=True)
