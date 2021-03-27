@@ -20,7 +20,12 @@ def findBusiness(choice , city):
     response = requests.get(url = ENDPOINT , params = PARAMETERS, headers = HEADERS)
     business_data = response.json()
     for biz in business_data['businesses']:
+        entry = {
+            'name': biz['name'],
+            'location': biz['location']['display_address'][0],
+            'phone': biz['display_phone'],
+            'image': biz['image_url']
+        }
+        businesses.append(entry)
 
     return businesses
-
-findBusiness("Coffee Shops" , "Pasadena")
