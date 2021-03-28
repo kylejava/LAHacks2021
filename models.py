@@ -23,7 +23,7 @@ def findBusiness(choice , city):
     for biz in business_data['businesses']:
         entry = {
             'name': (str(counter) + ". "  + biz['name']),
-            'location': biz['location']['display_address'][0] + " "+biz['location']['display_address'][1] ,
+            'location': biz['location']['display_address'][0] ,
             'phone': biz['display_phone'],
             'image': biz['image_url'],
             'rating': biz['rating']

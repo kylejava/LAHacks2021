@@ -22,10 +22,12 @@ box-sizing: border-box;
   font-size: 25px;
   font-family: 'Sarabun', sans-serif;
   margin-bottom: 25px;
+  font-family: Sarabun;
 }
 
 .topleft{
     background-color: #FFFFFF;
+    font-family: Sarabun;
 }
 
 input[type=text]{
