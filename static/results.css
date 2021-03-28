@@ -4,8 +4,8 @@
 }
 
 .business{
-  width: 710px;
-  height: 215px;
+  width: auto;
+  height: 250px;
   background-color: #ffffff;
 }
 .business-image{
@@ -35,7 +35,10 @@ input[type=text]{
   border: 1px solid #000000;
   box-sizing: border-box;
 }
-
+i{
+  width: 100px;
+    height: 100px;
+}
 
 .design{
 

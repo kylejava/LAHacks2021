@@ -26,7 +26,8 @@ def findBusiness(choice , city):
             'location': biz['location']['display_address'][0] ,
             'phone': biz['display_phone'],
             'image': biz['image_url'],
-            'rating': biz['rating']
+            'rating': biz['rating'],
+            'link': ("https://www.google.com/maps/place/" + biz['location']['display_address'][0] +" "+ biz['location']['display_address'][1])
         }
         counter +=1
         businesses.append(entry)
