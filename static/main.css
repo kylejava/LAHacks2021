@@ -16,6 +16,24 @@ body{
 }
 */
 
+.header{
+  background-color: white;
+}
+
+.form{
+    position: absolute;
+    top: 40%;
+    left: 7%;
+
+
+}
+
+.catalog{
+  position: absolute;
+  top: 70%;
+  left: 7%;
+}
+
 input[type=text]{
   background: #FFFFFF;
   border: 1px solid #000000;

@@ -12,9 +12,9 @@
     <script src="https://kit.fontawesome.com/a8e5d1c419.js" crossorigin="anonymous"></script>
 </head>
 
-<body style = "background-color:#f3f3ff; font-family: Sarabun;">
+<body style = "background-color:#f3f3ff;font-family: Sarabun;">
+  <div class="header">
     <!--Log in and sign in buttons-->
-    <div align="left">
     <a class="topright" href="signup.html"><u>Sign Up</u></a>
     <span class="topright">&nbspor&nbsp</span>
     <a class="topright" href="login.html"><u>Log In</u></a>
@@ -25,19 +25,35 @@
             <img src="../static/logo.png" width ="200">
         </a>
     </div>
+  </div>
+
 
     <!-- Input Screen -->
-    <div class="container">
+    <div class="container form">
       <form class="form" action="/result" method='POST'>
         <input type="text" name="choice" id = "choice" placeholder="Find A Shop">
         <input type="text" name="location" id = "location"placeholder="Find A Location">
         <button type="submit" name="button" id="btn"><i class="fas fa-search"></i></button>
       </form>
     </div>
+
+    <div class="container catalog text-center">
+      <div class="row">
+        <div class="col">
+          <img src="../static/about.png" alt="">
+        </div>
+        <div class="col">
+          <img src="../static/popular.png" alt="">
+        </div>
+        <div class="col">
+          <img src="../static/recent.png" alt="">
+        </div>
+      </div>
+    </div>
     <script type="text/javascript">
-      document.getElementById('choice').style.width = "490px";
+      document.getElementById('choice').style.width = "470px";
       document.getElementById('choice').style.height = "52px";
-      document.getElementById('location').style.width = "490px";
+      document.getElementById('location').style.width = "470px";
       document.getElementById('location').style.height = "52px";
       document.getElementById('btn').style.height = "52px";
       document.getElementById('btn').style.width = "60px";
