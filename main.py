@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 import requests
 import json
 from pprint import pprint
-from models import *
+
 
 app = Flask(__name__)
 

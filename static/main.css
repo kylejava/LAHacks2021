@@ -1,14 +1,20 @@
 .topright{
-  background-color: #FFFFFF;
+  /*background-color: #FFFFFF;*/
   float: right;
   font-size: 25px;
   font-family: 'Sarabun', sans-serif;
   margin-bottom: 25px;
 }
 
-.topleft{
-    background-color: #FFFFFF;
+body{
+    background-color:#F3F3FF;
 }
+
+/*
+.background{
+   background-color: #FFFFFF;
+}
+*/
 
 input[type=text]{
   background: #FFFFFF;
