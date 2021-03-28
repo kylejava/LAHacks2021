@@ -7,6 +7,7 @@ from pprint import pprint
 
 def findBusiness(choice , city):
     businesses = []
+    counter = 1
     ENDPOINT = 'https://api.yelp.com/v3/businesses/search'
     HEADERS = {'Authorization': 'Bearer %s' % api_key}
     PARAMETERS = {
@@ -21,11 +22,13 @@ def findBusiness(choice , city):
     business_data = response.json()
     for biz in business_data['businesses']:
         entry = {
-            'name': biz['name'],
-            'location': biz['location']['display_address'][0],
+            'name': (str(counter) + ". "  + biz['name']),
+            'location': biz['location']['display_address'][0] + " "+biz['location']['display_address'][1] ,
             'phone': biz['display_phone'],
-            'image': biz['image_url']
+            'image': biz['image_url'],
+            'rating': biz['rating']
         }
+        counter +=1
         businesses.append(entry)
 
     return businesses

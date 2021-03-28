@@ -1,6 +1,53 @@
+@font-face{
+  font-family: Sarabun;
+  src: url(fonts/Sarabun.ttf);
+}
+
 .business{
   width: 710px;
   height: 215px;
   background-color: #ffffff;
+}
+.business-image{
+  width: 200px;
+height: 182px;
+border: 1px solid #000000;
+box-sizing: border-box;
+
+}
+
+.topright{
+  background-color: #FFFFFF;
+  float: right;
+  font-size: 25px;
+  font-family: 'Sarabun', sans-serif;
+  margin-bottom: 25px;
+}
+
+.topleft{
+    background-color: #FFFFFF;
+}
+
+input[type=text]{
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+
+.design{
+
+/* Vector 3 */
+
+
+position: absolute;
+width: 162.14px;
+height: 1657.36px;
+left: -81.48px;
+top: 362.4px;
+
+border: 110px solid #D4D4F3;
+box-sizing: border-box;
+box-shadow: 4px 4px 25px #2558DD;
 
 }
